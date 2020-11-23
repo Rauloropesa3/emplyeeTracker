@@ -7,7 +7,7 @@ USE employtrac_db;
 
 CREATE TABLE department(
 id INT AUTO_INCREMENT,
-department_name name VARCHAR(30),
+department_name VARCHAR(30),
 PRIMARY KEY(id)
 );
 CREATE TABLE employee(
