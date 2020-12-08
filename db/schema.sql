@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS;
+DROP DATABASE IF EXISTS employtrac_db;
 
 CREATE DATABASE employtrac_db;
 
@@ -19,10 +19,10 @@ manager_id INT NULL,
 primary key(id)
 );
 CREATE TABLE role(
-id INT AUTO_INCREMENT,
-title VARCHAR(30),
-salary DECIMAL ,
-department_id INT,
+id INT AUTO_INCREMENT NOT NULL,
+title VARCHAR(30) NOT NULL,
+salary DEC(10, 2) NOT NULL,
+department_id INT NOT NULL,
 primary key(id)
 );
 
